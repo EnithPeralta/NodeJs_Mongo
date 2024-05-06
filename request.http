@@ -1,0 +1,59 @@
+###
+POST http://localhost:7000/api/proveedores HTTP/1.1
+Content-Type: application/json
+
+{
+    "cedula":1065695375,
+    "nombreCompleto":"Luis Angulo",
+    "telefono":3145728964,
+    "direccion":"San Martin",
+    "email":"anguloluis01@gmail.com"
+}  
+
+###
+GET http://localhost:7000/api/proveedores HTTP/1.1
+
+###
+GET http://localhost:7000/api/proveedores/660b3cc911204457db6ba75e HTTP/1.1
+
+###
+PUT http://localhost:7000/api/proveedores/660b3cc911204457db6ba75e HTTP/1.1
+Content-Type: application/json
+
+{
+    "cedula":1065695375,
+    "nombreCompleto":"Luis Martinez Angulo",
+    "telefono":3145728964,
+    "direccion":"San Martin",
+    "email":"anguloluis01@gmail.com"
+}  
+
+###
+DELETE  http://localhost:7000/api/proveedores/660b3cc911204457db6ba75e HTTP/1.1
+
+### Variedad 
+POST http://localhost:7000/api/variedad HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"Cafe Supremo"
+}
+
+###
+GET http://localhost:7000/api/variedad HTTP/1.1
+
+###
+GET http://localhost:7000/api/variedad/6612fe920f6c4f7c461a98ef HTTP/1.1
+
+###
+DELETE  http://localhost:7000/api/variedad/6612fe920f6c4f7c461a98ef HTTP/1.1
+
+###
+
+POST http://localhost:7000/api/maquinas HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":"M01",
+    "nombre":"Maquina 1"
+}
